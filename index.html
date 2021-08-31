@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>débora buzatto</title>
+        <title>formulario</title>
     </head>
     <body>
-        o objetivo desse repositório é exclusivo para entregar as atividades de prog.web
+        <h3>Formulario medico</h3>
+        <form action="" method="GET">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="text" name="nome" placeholder="nome"> <br>
+            <input type="email" name="email" placeholder="email"> <br>
+            <input type="text" name="endereço" placeholder="endereço"> <br>
+            <input type="text" name="telefone" placeholder="telefone"> <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>historico medico</legend>
+            <input type="checkbox" name="doença" value="diabetes">Diabetes<br>
+            <input type="checkbox" name="doença" value="hipertenssão">Hipertenssão<br>
+            <input type="checkbox" name="doença" value="asma">Asma<br>
+            <input type="checkbox" name="doença" value="cirurgia">cirurgia<br>
+            <input type="checkbox" name="doença" value="medicamento">medicamento em uso<br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>especialista</legend>
+            <input type="radio" name="especialidades" value="nutricionista">nutricionista<br>
+            <input type="radio" name="especialidades" value="nutricionista">pediatra<br>
+            <input type="radio" name="especialidades" value="nutricionista">ginecologista<br>
+            <input type="radio" name="especialidades" value="nutricionista">cardiologista<br>
+            <input type="radio" name="especialidades" value="nutricionista">anestesista<br>
+        </fieldset>
+        <br>
+        <select name="selecione a data" size=2>
+            <option value="15/09/2021">15/09/2021</option>
+            <option value="17/09/2021">17/09/2021</option>
+            <option value="23/09/2021">23/09/2021</option>
+            <option value="24/09/2021">24/09/2021</option>
+            <option value="28/09/2021">28/09/2021</option>
+            <option value="30/09/2021">30/09/2021</option>
+        </select>
+        <br>
+        <input type="submit" value="enviar dados">
+    </form>
     </body>
-</html>
+</html> 
