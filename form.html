@@ -2,16 +2,25 @@
 <html lang="en">
     <head>
         <title>formulario</title>
+        <style type="text/CSS" >
+        body{ 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h3 {
+            color: rgb(7, 9, 151);
+        } 
+        </style>
     </head>
     <body>
-        <h3>Formulario medico</h3>
+        <h3>Formulario medico </h3> 
+        <p>Agende sua consulta</p>
         <form action="" method="GET">
         <fieldset>
             <legend>Dados pessoais</legend>
-            <input type="text" name="nome" placeholder="nome"> <br>
-            <input type="email" name="email" placeholder="email"> <br>
-            <input type="text" name="endereço" placeholder="endereço"> <br>
-            <input type="text" name="telefone" placeholder="telefone"> <br>
+            <input type="text" name="nome" placeholder="nome" required> <br>
+            <input type="email" name="email" placeholder="email" required> <br>
+            <input type="text" name="endereço" placeholder="endereço" required> <br>
+            <input type="text" name="telefone" placeholder="telefone" required> <br>
         </fieldset>
         <br>
         <fieldset>
@@ -23,8 +32,8 @@
             <input type="checkbox" name="doença" value="medicamento">medicamento em uso<br>
         </fieldset>
         <br>
-        <fieldset>
-            <legend>especialista</legend>
+        <fieldset> 
+            <legend>especialista</legend> 
             <input type="radio" name="especialidades" value="nutricionista">nutricionista<br>
             <input type="radio" name="especialidades" value="nutricionista">pediatra<br>
             <input type="radio" name="especialidades" value="nutricionista">ginecologista<br>
@@ -32,7 +41,7 @@
             <input type="radio" name="especialidades" value="nutricionista">anestesista<br>
         </fieldset>
         <br>
-        <select name="selecione a data" size=2>
+        <select name="selecione a data" size=2 required>
             <option value="15/09/2021">15/09/2021</option>
             <option value="17/09/2021">17/09/2021</option>
             <option value="23/09/2021">23/09/2021</option>
@@ -41,7 +50,8 @@
             <option value="30/09/2021">30/09/2021</option>
         </select>
         <br>
+        <br>
         <input type="submit" value="enviar dados">
     </form>
     </body>
-</html> 
+</html>
