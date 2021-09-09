@@ -27,6 +27,14 @@ function inserirBotoescomJS() {
     document.body.prepend(div);
 }
 
+function inserirBotoesComInnerHTML() {
+    div = document.createElement("div")
+    div.innerHTML = `
+    <button onclick="mudartamanhotitulo('diminua')">-</button>
+    <button onclick="mudartamanhotitulo('aumente')">+</button>`
+
+}
+
 function alterartamanhotitulo(tamanho) {
     h1 = document.querySelector("h1");
     h1.style.font = tamanho;
