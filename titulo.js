@@ -29,9 +29,9 @@ function inserirBotoescomJS() {
 
 function inserirBotoesComInnerHTML() {
     div = document.createElement("div")
-    div.innerHTML = `
-    <button onclick="mudartamanhotitulo('diminua')">-</button>
-    <button onclick="mudartamanhotitulo('aumente')">+</button>`
+    div.innerHTML = ` 
+    <button onclick="aumente()">+</button>
+    <button onclick="diminui()">-</button>`
 
 }
 
