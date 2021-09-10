@@ -31,27 +31,27 @@ function getLinhaColuna(celula) {
 }
 
 function insereInput(celula) {
-    const  input  =  document . createElement ( 'input' ) ;
-    celula . anexar ( entrada ) ;
-    entrada . addEventListener ( 'alterar' ,  ( )  =>  {
-        const  valor  =  parseInt ( entrada . valor ) ;
-        const  [ linha , coluna ]  =  getLinhaColuna ( celula ) ;
-        matriz [ linha ] [ coluna ]  =  valor ;
-        const  quadradroCompleto  =  verificaMatriz ( ) ;
-        if  ( quadradroCompleto )  {
-            documento . querySelector ( '#quadradomagico' ) . classList . add ( 'Vitória' ) ;
+    const input = document.createElement('input');
+    celula.append(input);
+    input.addEventListener('change', () => {
+        const valor = parseInt(input.value);
+        const [linha,coluna] = getLinhaColuna(celula);
+        matriz[linha][coluna] = valor;
+        const quadradoCompleto = verificaMatriz();
+        if (quadradoCompleto) {
+            document.querySelector('#quadradomagico').classList.add('vitoria');
             documento . querySelectorAll ( 'input' ) . forEach ( input  =>  {
-                entrada . readOnly  =  true ;
-            } )
-            criaTextoParabens ( ) ;
-            criaBotaoReinicia ( ) ;
-        }
-    } ) ;
+            entrada . readOnly  =  true ;
+        } )
+        criaTextoParabens ( ) ;
+        criaBotaoReinicia ( ) ;
+}
+} ) ;
 }
 
 function  criaTextoParabens ( )  {
     const  parabens  =  document . createElement ( 'p' ) ;
-    parabenos . innerText  =  "Parabéns: D Vamos jogar de novo? :)"
+    parabenos . innerText  =  "Parabéns! deseja jogar novamente? :)"
     documento . corpo . anexar ( parabenos ) ;
 }
 
@@ -60,14 +60,14 @@ function  criaBotaoReinicia ( )  {
     botaoReinicia . innerText  =  "Reiniciar"
     documento . corpo . anexar ( botaoReinicia ) ;
     botaoReinicia . addEventListener ( 'click' ,  ( )  =>  {
-        const  tabela  =  documento . querySelector ( '#quadradomagico' ) ;
-        const  parabens  =  document . querySelector ( 'p' ) ;
-        tabela . remove ( ) ;
-        parabenos . remove ( ) ;
-        botaoReinicia . remove ( ) ;
-        iniciaAe ( ) ;
-    } )
-}
+    const  tabela  =  documento . querySelector ( '#quadradomagico' ) ;
+    const  parabens  =  document . querySelector ( 'p' ) ;
+    tabela . remove ( ) ;
+    parabenos . remove ( ) ;
+    botaoReinicia . remove ( ) ;
+    insereTabela ( ) ;
+} )
+}}
 
 function verificaMatriz() {
     const numerosRepetidos = verificaNumerosRepetidos();
