@@ -1,0 +1,70 @@
+body {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-family: 'arial';
+}
+td {
+    border: solid 2px;
+}
+
+input {
+    border: none;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    font-size: x-large;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+.ordem {
+    border: solid 1.5px;
+    border-color: white;
+}
+
+.texto1 {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+    font-family: 'arial';
+}
+.somaerradacoluna input,
+.somaerradalinha input,
+.somaerradadiagonalsecundaria input, 
+.somaerradadiagonalprincipal input {
+    color: orange;
+}
+
+.somaerradacoluna,
+.somaerradalinha,
+.somaerradadiagonalsecundaria, 
+.somaerradadiagonalprincipal {
+    color: orange;
+    border: solid 3px;
+}
+
+.foradoslimites input, 
+.numerosrepetidos input {
+    color: red;
+}
+
+.foradoslimites,
+.numerosrepetidos {
+    color: red;
+    border: solid 3px;
+}
+
+.vitoria tr td {
+    color: green;
+    border: solid 3px;
+}
+
+.vitoria tr td input {
+    color: green;
+}
