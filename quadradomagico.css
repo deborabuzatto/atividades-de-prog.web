@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    color: black;
+    font-size: 2em;
+    font-family: 'arial';
 }
 td {
     border: solid 2px;
@@ -23,13 +26,6 @@ table {
 .ordem {
     border: solid 1.5px;
     border-color: white;
-}
-
-.textoinicio {
-    text-align: center;
-    color: black;
-    font-size: 2em;
-    font-family: 'arial';
 }
 
 .somaerradacoluna input,
