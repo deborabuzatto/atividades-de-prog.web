@@ -1,34 +1,35 @@
 body {
     text-align: center;
 }
+td {
+    border: solid 2px;
+}
+
+input {
+    border: none;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    font-size: x-large;
+}
+
 
 table {
     border-collapse: collapse;
     margin: auto;
 }
 
-td {
-    border: solid 1px;
-}
-
-input {
-    border: none;
-    width: 3em;
-    height: 3em;
-    text-align: center;
-    font-size: larger;
-}
 
 .ordem {
-    border: solid 1px;
-    border-color: grey;
+    border: solid 1.5px;
+    border-color: white;
 }
 
 .textoinicio {
     text-align: center;
     color: black;
-    font-size: 1.1em;
-    font-family: 'Comic Sans';
+    font-size: 2em;
+    font-family: 'arial';
 }
 
 .somaerradacoluna input,
