@@ -1,0 +1,62 @@
+html{
+    overflow-x:hidden;
+}
+.btn_option{
+    width: 150px; 
+    height: 150px; 
+    background-color: #797fbb; 
+    border: solid 5px #F1C40F;
+}
+.color1{
+    background-color: #F1C40F;
+}
+.color2{
+    background-color: #797fbb;
+}
+.borda{
+    box-shadow:0 0 1em rgb(182, 178, 178);
+}
+.btn{
+    border-radius: 5%;
+    display: inline-block;
+    padding: 14px 30px;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    background-position: center 50px;
+    max-width: 300px;
+    min-width: 204px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s ease-out,background-position 0.6s ease-out;
+    
+}
+
+/*@font-face {
+    font-family: bobby-jones;
+    src: url(fonts/xxxxx);
+}*/
+
+.btnLogin{
+    color: #ffffff;
+    border-color: #797fbb;
+    background-color: #921964dc;
+}
+.btnLogin:hover{
+    color: #020031;
+    border-color: #6d3353;
+    background-color: #ffffff;
+}
+
+.bg-image{
+    background: url(image1.png);
+    background: linear-gradient(45deg, #020031 0%,#6d3353 100%);
+    color: white
+}
+
+.color{
+    color:#6d3353;
+}
